@@ -1,6 +1,37 @@
-/* colors */
-$red: #F08383
+/* background, header and nav for homepage */
+#background
+	background-image: url(../_assets/img/bg3.jpg)
+	height: 100vh
+	background-size: cover
+	background-position: center
+	text-align: center
+	header
+		padding: 3rem 0
+		#logo
+			text-transform: uppercase
+			color: $highlight
+			float: left
+			font-weight: 700
+			text-decoration: none
+		nav
+			float: right
+			ul
+				list-style: none
+				margin: 0
+				li
+					display: inline
+					margin-left: 2rem
+					a
+						color: $highlight
+						text-decoration: none
+						&:hover
+							color: $downlight
 
-body
-	background-color: $red
-	
+
+/* h1 for homepage */
+h1
+	color: $downlight
+	font-size: 3rem
+	font-weight: 300
+	letter-spacing: 1px
+	margin: 7rem 0 2rem 0

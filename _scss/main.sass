@@ -1,2 +1,46 @@
-/* imports */
-@import 'homestyle'
+/* importing external stylesheet */
+@import "normalize"
+@import "colors"
+@import "homestyle"
+
+/* font family */
+body
+	font-family: 'Raleway', sans-serif
+
+
+/* various wrapper */
+.wrapper
+	width: 80%
+	margin: 0 auto
+
+.wide-wrapper
+	width: 90%
+	margin: 0 auto
+
+.skinny-wrapper
+	width: 60%
+	margin: 0 auto
+
+.clearfix:before,
+.clearfix:after
+	content: " "
+	display: table
+
+.clearfix:after
+	clear:both
+
+.button
+	color: $highlight
+	text-decoration: none
+	font-size: 1rem
+	padding: 1rem 1rem
+	border-radius: 1rem
+	outline: none
+	border: 2px solid $highlight
+	background: $downlight
+	display: inline-block
+	min-width: 10rem
+	margin: 2% 2% 0 2%
+	&:hover
+		background: $highlight
+		color: $downlight
