@@ -1,0 +1,58 @@
+doctype html
+html
+	head
+		title Talking Tomes
+		link(rel="stylesheet", href="_scss/main.css")
+		link(href='https://fonts.googleapis.com/css?family=Raleway&effect=outline' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+	body
+		header#list-header.clearfix
+			.wide-wrapper
+				a(href="index.html")#logo Talking Tomes
+				nav
+					ul
+						li: a(href="list-of-tomes.html") Explore
+						li: a(href="#") Contribute
+						li: a(href="#") About
+		#tomes-show
+			#tomes-show-banner
+				.skinny-wrapper
+				h1.font-effect-outline Tome's Titles
+				p.tome-description Insert some long long and windy description here.
+				//a(href="#").publisher-link Publisher Name
+				//a(href="#").publisher-link Publishing Date
+			#breadcrumb
+				a(href="#") All Talking Tomes
+					span /
+					| Tome's Titles
+			#chapter-or-episode
+				.skinny-wrapper
+					ul.clearfix
+						li.clearfix
+							.chapter-thumbnail
+								a(href="#")
+									img(src="http://avatarbox.net/avatars/img29/mr_burns_sneaky_avatar_picture_14912.gif", alt="")
+							.chapter-synopsis
+								h2
+									a(href="#") How to do anything anywhere chapter 1 
+								p(align="justify").description Sensory otaku girl human smart-systemic neon narrative tattoo knife office sunglasses A.I. decay pen. Girl denim RAF refrigerator bridge sunglasses systema apophenia man ablative vinyl neon table Legba.
+
+						li.clearfix
+							.chapter-thumbnail
+								a(href="#")
+									img(src="http://www.tiptopglobe.com/forum/images/avatars/gallery/filmy/Scarface2.jpg", alt="")
+							.chapter-synopsis
+								h2
+									a(href="#") How to do anything anywhere chapter 2 
+								p(align="justify").description Sensory otaku girl human smart-systemic neon narrative tattoo knife office sunglasses A.I. decay pen. Girl denim RAF refrigerator bridge sunglasses systema apophenia man ablative vinyl neon table Legba.
+
+						li.clearfix
+							.chapter-thumbnail
+								a(href="#")
+									img(src="http://www.fillmurray.com/100/100", alt="")
+							.chapter-synopsis
+								h2
+									a(href="#") How to do anything anywhere chapter 3 
+								p(align="justify").description Sensory otaku girl human smart-systemic neon narrative tattoo knife office sunglasses A.I. decay pen. Girl denim RAF refrigerator bridge sunglasses systema apophenia man ablative vinyl neon table Legba.
+								
+								include ../_includes/audio.jade
