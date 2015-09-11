@@ -26,12 +26,300 @@
 						text-decoration: none
 						&:hover
 							color: $downlight
+	h1
+		color: $downlight
+		font-size: 3rem
+		font-weight: 300
+		letter-spacing: 1px
+		margin: 7rem 0 2rem 0
+
+#list-header
+	padding: 3rem 0
+	#logo
+		text-transform: uppercase
+		color: $dark
+		float: left
+		font-weight: 700
+		text-decoration: none
+	nav
+		float: right
+		ul
+			list-style: none
+			margin: 0
+			li
+				display: inline
+				margin-left: 2rem
+				a
+					color: $dark
+					text-decoration: none
+					&:hover
+						color: $highlight
 
 
-/* h1 for homepage */
-h1
+#banner
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	margin-bottom: 3rem
+	h1
+		text-align: center
+		color: $downlight
+		font-size: 3rem
+		font-weight: 300
+		letter-spacing: 1px
+		margin: 0
+		padding: 4rem 0 0.75rem
+	p
+		font-size: 1rem
+		padding: 0 0 2.8rem
+		text-align: right
+
+.tome-banner
+	//background: $dark
+	background-image: url(../_assets/img/tome.jpg)
+
+/* ribbon testing */
+/*.side-corner-tag
+		position: relative
+		color: #fff
+		display: inline-block
+		padding: 5px
+		overflow: hidden
+		font-family: Arial, sans-serif
+		font-weight: 900
+		span
+			p
+				position: absolute
+				display: inline-block
+				right: -25px;
+				box-shadow: 0px 0px 10px rgba(0,0,0,0.2), inset 0px 5px 30px rgba(255,255,255,0.2);
+				text-align: center
+				text-transform: uppercase
+				top: 6px
+				background: #d93131
+				width: 100px
+				padding: 3px 10px
+				-webkit-transform: rotate(45deg)
+				-moz-transform: rotate(45deg)
+				-o-transform: rotate(45deg)
+				-ms-transform: rotate(45deg)
+		span:before 
+			content: ""
+			width: 0
+			height: 0
+			position: absolute
+			top: -17px
+			right: 69px
+			z-index: -1
+			border: 17px solid
+			border-color: transparent transparent #662121 transparent
+		span:after
+			content: ""
+			width: 0
+			height: 0
+			position: absolute
+			top: 74px
+			z-index: -1
+			right: -10px
+			border: 17px solid
+			border-color: #662121 transparent transparent transparent*/
+
+/*************************************/
+//colors
+/*$white: #fff
+$black_20: rgba(0,0,0,0.2)
+$white_20: rgba(255,255,255,0.2)
+$color_persian_red_approx: #d93131
+$color_espresso_approx: #662121
+
+//fonts
+$font_0: Arial
+$font_1: sans-serif
+
+.side-corner-tag 
+	position: relative
+	color: $white
+	display: inline-block
+	padding: 5px
+	overflow: hidden
+	font-family: $font_0, $font_1
+	font-weight: 900
+	span
+		p
+			position: absolute
+			display: inline-block
+			right: -25px
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 10px $black_20, inset 0 5px 30px $white_20
+			text-align: center
+			text-transform: uppercase
+			top: 6px
+			background: $color_persian_red_approx
+			width: 100px
+			padding: 3px 10px
+		&:before
+			content: ""
+			width: 0
+			height: 0
+			position: absolute
+			top: -17px
+			right: 69px
+			z-index: -1
+			border: 17px solid
+			border-color: transparent transparent $color_espresso_approx transparent
+		&:after
+			content: ""
+			width: 0
+			height: 0
+			position: absolute
+			top: 74px
+			z-index: -1
+			right: -10px
+			border: 17px solid
+			border-color: $color_espresso_approx transparent transparent transparent*/
+
+/*********************************/
+#tomes
+	padding-bottom: 3rem
+	ul
+		list-style: none
+		padding-left: 0
+		margin: 0
+		li
+			width: 23%
+			float: left
+			margin: 0 1% 2rem 1%
+			-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25)
+			box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25)
+			border-radius: 0.3rem
+			img
+				width: 100%
+				max-width: 100%
+			.overview
+				padding: 1rem 7.5%
+				h2
+					margin: 0
+					font-size: 1rem
+					font-weight: 700
+					color: $dark
+				.naration
+					color: $highlight
+					font-size: 0.9rem
+			&:hover
+				img
+					opacity: 0.7
+
+#tomes-show
+	#tomes-show-banner
+		background: $dark
+		text-align: center
+		padding: 2rem 0
+		//background-image: url(../_assets/img/bg.jpg)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		//margin-bottom: 3rem
+
+.tome-description
+	width: 50%
+	margin: 0 auto 2rem auto
 	color: $downlight
-	font-size: 3rem
-	font-weight: 300
-	letter-spacing: 1px
-	margin: 7rem 0 2rem 0
+
+.list-description
+	width: 50%
+	margin: auto
+	color: $downlight
+	margin: 0 auto 1rem
+
+/*.publisher-link
+	font-size: 1rem
+	text-transform: uppercase
+	font-weight: 700
+	text-decoration: none
+	text-align: center
+	display: inline
+	color: $highlight
+	background: $downlight
+	border-radius: 2rem
+	padding: 0.5rem 1rem
+	margin: 0.5rem
+	&:hover
+		background: $highlight
+		color: $downlight*/
+
+#breadcrumb
+	padding: 1rem
+	text-align: center
+	border-bottom: 1px solid lighten($dark, 70%)
+	font-weight: 700
+	font-size: 1rem
+	a
+		color: lighten($dark, 50%)
+		text-decoration: none
+
+span
+	margin: 1rem
+
+
+/* chapter or episode */
+#chapter-or-episode
+	padding: 3rem 0
+	ul
+		list-style: none
+		padding-left: 0
+		li
+			padding-bottom: 2rem
+			margin-bottom: 2rem
+			border-bottom: 1px solid lighten($dark, 70%)
+			&:last-child
+				border-bottom: none
+			.chapter-thumbnail
+				width: 20%
+				float: left
+				img
+					width: 8rem
+					max-width: 100%
+					border-radius: 0.4rem
+			.chapter-synopsis
+				width: 78.5%
+				float: left
+				margin-left: 1.5%
+				h2
+					a
+						color: $dark
+						text-decoration: none
+
+/* pagination */
+.pagination:before,
+.pagination:after
+	content: " "
+	display: table
+
+.pagination:after
+	clear:both
+
+.pagination
+	text-align: center
+	margin: 3rem 0 5rem 0
+	a, .previous-page, .current, .next-page
+		padding: 0.75em 1em
+		margin: 0 0.25em
+		border-radius: 0.15em
+		line-height: 1.25
+		background: white
+		font-weight: 700
+		font-size: 1em
+		font-style: normal
+		text-decoration: none
+		color: $dark
+		&:hover
+			background: $highlight
+			color: white
+	.current
+		background: $highlight
+		color: white
+	.disabled
+		color: $light
+		&:hover
+			color: #C0C0C0
+			background: white
