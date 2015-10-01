@@ -1,4 +1,6 @@
+/*-----------------------------------------*/
 /* background, header and nav for homepage */
+/*-----------------------------------------*/
 #background
 	background-image: url(../_assets/img/bg3.jpg)
 	height: 100vh
@@ -13,6 +15,8 @@
 			float: left
 			font-weight: 700
 			text-decoration: none
+			&:hover
+				color: $downlight
 		nav
 			float: right
 			ul
@@ -41,6 +45,8 @@
 		float: left
 		font-weight: 700
 		text-decoration: none
+		&:hover
+			color: $highlight
 	nav
 		float: right
 		ul
@@ -153,7 +159,10 @@ span
 	margin: 1rem
 
 
+
+/*--------------------*/
 /* chapter or episode */
+/*--------------------*/
 #chapter-or-episode
 	padding: 3rem 0
 	ul
@@ -181,7 +190,11 @@ span
 						color: $dark
 						text-decoration: none
 
+
+
+/*--------------------*/
 /* chapter or episode */
+/*--------------------*/
 #episode-audio-text
 	padding: 3rem 0
 	ul
@@ -212,7 +225,11 @@ span
 					font-weight: 400
 					margin-bottom: 1.5em
 
+
+
+/*------------*/
 /* pagination */
+/*------------*/
 .pagination:before,
 .pagination:after
 	content: " "
