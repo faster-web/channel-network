@@ -36,22 +36,22 @@ html
 					include ../_includes/tome-06.jade
 					include ../_includes/tome-07.jade
 					include ../_includes/tome-08.jade
-					
+
 					//failed attempt
 					//.side-corner-tag
 						img(src="http://www.fillmurray.com/200/200", alt="")
 						p: span Newest
 
 		.pagination
-			span.previous-page.disabled 
-				| Sebelumnya 
-			em.current 
+			a.next-page(href="list-of-tomes-2.html") 
+				| Sebelumnya
+			a(rel="next", href="list-of-tomes.html")   
 				| 1
 			a(rel="next", href="list-of-tomes-2.html") 
 				| 2
-			a(rel="next", href="list-of-tomes-3.html") 
+			em.current 
 				| 3
 			a(rel="next", href="list-of-tomes-4.html") 
 				| 4
-			a.next-page(href="list-of-tomes-2.html") 
+			a.next-page(href="list-of-tomes-4.html") 
 				| Berikutnya

@@ -43,15 +43,15 @@ html
 						p: span Newest
 
 		.pagination
-			span.previous-page.disabled 
-				| Sebelumnya 
-			em.current 
+			a(rel="next", href="list-of-tomes-3.html")  
+				| Sebelumnya
+			a(rel="next", href="list-of-tomes.html")   
 				| 1
-			a(rel="next", href="list-of-tomes-2.html") 
+			a(rel="next", href="list-of-tomes-2.html")
 				| 2
 			a(rel="next", href="list-of-tomes-3.html") 
 				| 3
-			a(rel="next", href="list-of-tomes-4.html") 
+			em.current 
 				| 4
-			a.next-page(href="list-of-tomes-2.html") 
+			span.previous-page.disabled 
 				| Berikutnya
